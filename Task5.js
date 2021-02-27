@@ -1,9 +1,10 @@
-let checkNumber = 4
 
-if(checkNumber % 1 !== 0 && checkNumber % 2 == 1) {
-    document.write('Bukan Bilangan Prima');
-} else if (checkNumber % 1 == 0) {
-    document.write('Bilangan Prima');
-} else if (checkNumber % checkNumber == 0) {
-    document.write('Bilangan Prima');
-}    
+function number(x) {
+    if(x % 2 != 0 || x == 2){
+        if(x == 3 || x == 5 || x == 7 || x % 3 != 0 || x % 5 != 0 || x % 7 != 0){
+        document.write(x + ' ' + 'adalah bilangan prima')
+        }}else{
+            document.write(x + ' ' + 'adalah bukan bilangan prima')
+    }
+}
+number(23)
